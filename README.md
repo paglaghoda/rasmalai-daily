@@ -49,10 +49,7 @@ Site-wide settings (title, URL, socials, timezone) are in `src/config.mjs`.
 
 The site runs as a Cloudflare Worker (static assets) on `daily.rasmalai.tech`, configured in `wrangler.jsonc`.
 
-**Automatic:** every push to `main` runs `.github/workflows/deploy.yml`, which builds and deploys. It needs two repo secrets (GitHub → Settings → Secrets and variables → Actions):
-
-- `CLOUDFLARE_API_TOKEN`: a token with *Workers Scripts: Edit*, *Workers Routes: Edit* (zone rasmalai.tech) and *Account Settings: Read*
-- `CLOUDFLARE_ACCOUNT_ID`: your account ID
+**From the dashboard:** Cloudflare → Workers & Pages → Create → Import a repository → pick `rasmalai-daily`. Build command `npm run build`, deploy command `npx wrangler deploy` (the defaults). After that, every push redeploys.
 
 **Manual:**
 
