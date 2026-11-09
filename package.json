@@ -1,0 +1,17 @@
+{
+  "name": "rasmalai-daily",
+  "private": true,
+  "type": "module",
+  "description": "Daily curiosity dumps — one thing I learnt today.",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "new": "node src/new.mjs",
+    "dev": "node src/build.mjs && node src/serve.mjs"
+  },
+  "dependencies": {
+    "marked": "18.1.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
