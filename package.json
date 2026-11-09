@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node src/build.mjs",
     "new": "node src/new.mjs",
-    "dev": "node src/build.mjs && node src/serve.mjs"
+    "dev": "node src/build.mjs && node src/serve.mjs",
+    "deploy": "node src/build.mjs && npx wrangler@4 deploy"
   },
   "dependencies": {
     "marked": "18.1.3"

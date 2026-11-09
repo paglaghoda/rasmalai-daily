@@ -45,10 +45,19 @@ npm run dev     # builds, then serves on http://localhost:4321
 
 Site-wide settings (title, URL, socials, timezone) are in `src/config.mjs`.
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Workers)
 
-1. Cloudflare dashboard → Workers & Pages → Create → Pages → connect this repo.
-2. Build command: `npm run build`. Output directory: `dist`.
-3. Custom domains → add `daily.rasmalai.tech`.
+The site runs as a Cloudflare Worker (static assets) on `daily.rasmalai.tech`, configured in `wrangler.jsonc`.
+
+**Automatic:** every push to `main` runs `.github/workflows/deploy.yml`, which builds and deploys. It needs two repo secrets (GitHub → Settings → Secrets and variables → Actions):
+
+- `CLOUDFLARE_API_TOKEN`: a token with *Workers Scripts: Edit*, *Workers Routes: Edit* (zone rasmalai.tech) and *Account Settings: Read*
+- `CLOUDFLARE_ACCOUNT_ID`: your account ID
+
+**Manual:**
+
+```bash
+npm run deploy
+```
 
 The streak grid is computed at build time, so it updates every time you push.
