@@ -1,13 +1,12 @@
 # About
 
-This is where I dump whatever I got curious about today. Every day I pick something new, study it, and write down what stuck: what it is, why it works, and the bit that surprised me.
+My daily dumpyard of Knowledge and understand. The goal is to explain what i have learnt by writing.
 
-It’s not polished writing. It’s a public notebook. If something here is wrong, it probably means I learnt it wrong, and I’d love to hear about it.
+It's proven that -- writing something in your own words by just memory, makes u better grasp the concept and understand what u were trying to "remember"
 
 The rules:
-
 - **One thing a day.** Small is fine. Skipping is not.
 - **Summarise it in two lines.** If I can’t, I haven’t understood it yet.
 - **Link where I learnt it.** Credit the people who taught me.
 
-My actual site, with things I’ve made, is [rasmalai.tech](https://rasmalai.tech/).
+About me: [rasmalai.tech](https://rasmalai.tech/).
